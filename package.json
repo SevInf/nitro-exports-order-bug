@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "preview": "nitro build && wrangler pages dev dist/"
+  },
+  "imports": {
+    "#text": {
+      "edge-light": "./vercel.mjs",
+      "workerd": "./cloudflare.mjs"
+    }
+  },
+  "devDependencies": {
+    "nitropack": "latest",
+    "wrangler": "^3.32.0"
+  }
+}
